@@ -47,6 +47,8 @@ const Dashboard = ({ address }) => {
 
 export default Dashboard
 
+export async function getServerSideProps(context) {}
+
 const Wrapper = styled.div`
   display: flex;
   height: 100vh;
