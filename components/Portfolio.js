@@ -60,8 +60,8 @@ const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
                             </TableRow>
                         </TableItem>
                         <Divider />
-                        <div>{coins.map(coin => (
-                            <div>
+                        <div>{coins.map((coin, index) => (
+                            <div key={index}>
                                 <Coin coin={coin} />
                                 <Divider />
                             </div>
